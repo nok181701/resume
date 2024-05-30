@@ -70,10 +70,8 @@ const Resume: React.FC = () => (
       <View style={styles.section}>
         <Text style={styles.subHeader}>概要</Text>
         <Text style={styles.text}>
-          4年間の業界経験を通じ、ECサイトの運営とWebアプリケーションのフロントエンド開発に従事。
-          フロントエンドではReact・Type Script・CSSでの構築が得意。
-          開発ではコーディング規約とトンマナに気をつけチーム内のルールや連携を重視。
-          常に最新の技術トレンドを追求することに情熱を注いでいる。
+          リユース業界でのでWebデザイナー・ECサイト運営として従事し、LPや自社ECサイトの静的ページを設計から構築まで担当。
+          2022年に株式会社ウェブエッジに入社し、SESとして主にフロントエンドの開発に携わりWebフロントの設計React.jsやJavaScript/TypeScript構成の実装を担当。
         </Text>
       </View>
       <View style={styles.section}>
@@ -83,6 +81,28 @@ const Resume: React.FC = () => (
           <Text style={styles.text}>id: nok181701</Text>
           <Text style={styles.text}>年齢: 26</Text>
         </View>
+      </View>
+      <View style={styles.section}>
+        <Text style={styles.subHeader}>得意なこと</Text>
+        <Text style={styles.text}>Webサイト・アプリケーションの開発</Text>
+        <Text style={styles.text}>
+          ・LPやコーポレートサイトなど、静的ページの設計から構築まで一通りをこなせる
+        </Text>
+        <Text style={styles.text}>
+          ・対象のプロダクトが訴求・解決する力を理解し設計・デザインUIに落とし込む
+        </Text>
+        <Text style={styles.text}>
+          ・デザイナー（仕様の相談）、バックエンド（APIを通じたデータ制御のやり取り）との連携
+        </Text>
+        <Text style={styles.text}>
+          ・スクラム開発を用いた開発・チームビルディング
+        </Text>
+      </View>
+      <View style={styles.section}>
+        <Text style={styles.subHeader}>苦手なこと</Text>
+        <Text style={styles.text}>
+          サーバーサイド・インフラ部分の業務（業務経験が浅い）
+        </Text>
       </View>
       <View style={styles.section}>
         <Text style={styles.subHeader}>職歴</Text>
@@ -117,7 +137,7 @@ const Resume: React.FC = () => (
             <Text style={styles.text}>開発規模 </Text>
             <Text style={styles.text}>3人</Text>
             <Text style={styles.text}>使用した技術 </Text>
-            <Text style={styles.text}>Java Script, My SQL</Text>
+            <Text style={styles.text}>Java Script(ES6), My SQL</Text>
             <Text style={styles.text}>主な担当業務</Text>
             <Text style={styles.text}>・クライアントとの機能要件の調整</Text>
             <Text style={styles.text}>
@@ -144,10 +164,10 @@ const Resume: React.FC = () => (
             ・ 自社サイトやモール（楽天市場・Yahooショッピング）の改修・運用
           </Text>
           <Text style={styles.text}>
-            ・ バナー、LPの要件定義からデザイン、コーディング
+            ・ バナー、LPの設計からデザイン、コーディング
           </Text>
           <Text style={styles.text}>
-            ・ 楽天市場の運用(販促クーポンの実施やメルマガの運用)
+            ・楽天市場の運用(商品ページの作成、販促クーポンの実施やメルマガの運用)
           </Text>
         </View>
       </View>
@@ -155,17 +175,22 @@ const Resume: React.FC = () => (
         <Text style={styles.subHeader}>スキル（実務経験あり）</Text>
         <Text style={styles.text}>・React</Text>
         <View style={styles.subsection}>
-          <Text style={styles.text}>- componentの改修</Text>
-          <Text style={styles.text}>- hooksの新規・改修</Text>
+          <Text style={styles.text}>- componentの設計・改修</Text>
+          <Text style={styles.text}>- Custom Hookの追加・改修</Text>
           <Text style={styles.text}>- 各ページview/viewModel/の新規・改修</Text>
           <Text style={styles.text}>
             - 各ページstate(reducer/action)の新規・改修
           </Text>
         </View>
         <Text style={styles.text}>・Type Script</Text>
+        <Text style={styles.text}>- 型定義ファイルの追加、propsへの型定義</Text>
         <Text style={styles.text}>・CSS(Chakura UI)</Text>
         <Text style={styles.text}>・Docker</Text>
+        <Text style={styles.text}>- 環境構築レベル</Text>
         <Text style={styles.text}>・My SQL</Text>
+        <Text style={styles.text}>
+          - シードデータの追加や実装に必要なデータの確認や挿入時に使用する程度
+        </Text>
       </View>
       <View style={styles.section}>
         <Text style={styles.subHeader}>スキル（実務経験なし）</Text>
