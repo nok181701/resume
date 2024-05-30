@@ -99,12 +99,10 @@ const Resume: React.FC = () => (
               スクラム開発下でのフロントエンドを担当
             </Text>
             <Text style={styles.text}>開発規模 </Text>
-            <Text style={styles.text}>
-              ・平均 6〜8 人チームでのスクラム開発
-            </Text>
+            <Text style={styles.text}>・平均 6〜8 人</Text>
             <Text style={styles.text}>使用した技術 </Text>
             <Text style={styles.text}>
-              React(v18), Type Script, My SQL, Docker, CSS(Chakura UI)
+              React(v18), Type Script, CSS(Chakura UI), My SQL, Docker,
             </Text>
             <Text style={styles.text}>主な担当業務</Text>
             <Text style={styles.text}>
