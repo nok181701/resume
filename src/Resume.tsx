@@ -70,15 +70,15 @@ const Resume: React.FC = () => (
       <View style={styles.section}>
         <Text style={styles.subHeader}>概要</Text>
         <Text style={styles.text}>
-          リユース業界でのでWebデザイナー・ECサイト運営として従事し、LPや自社ECサイトの静的ページを設計から構築まで担当。
-          2022年に株式会社ウェブエッジに入社し、SESとして主にフロントエンドの開発に携わりWebフロントの設計React.jsやJavaScript/TypeScript構成の実装を担当。
+          リユース業界にてWebデザイナー・ECサイト運営として従事し、LPや自社ECサイトの静的ページを設計から構築まで担当。
+          2022年に株式会社ウェブエッジに入社し、SESとして主にフロントエンドの開発に携わりWebフロントの設計やReact.js、JavaScript/TypeScriptで実装を担当。
         </Text>
       </View>
       <View style={styles.section}>
         <Text style={styles.subHeader}>基本情報</Text>
         <View style={styles.detail}>
           <Text style={styles.text}>祝井 直樹</Text>
-          <Text style={styles.text}>id: nok181701</Text>
+          <Text style={styles.text}>ID: nok181701</Text>
           <Text style={styles.text}>年齢: 26</Text>
         </View>
       </View>
