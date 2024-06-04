@@ -129,7 +129,7 @@ const Resume: React.FC = () => (
               ・デザインと機能要件に応じてWEBフロントの実装
             </Text>
             <Text style={styles.text}>
-              ・フロントエンドのパフォーマンスチューニング
+              ・フロントエンド部分のパフォーマンス計測・改善
             </Text>
           </View>
           <View style={styles.subsection}>
