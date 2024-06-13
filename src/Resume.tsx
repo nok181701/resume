@@ -131,6 +131,9 @@ const Resume: React.FC = () => (
             <Text style={styles.text}>
               ・フロントエンド部分のパフォーマンス計測・改善
             </Text>
+            <Text style={styles.text}>
+              ・要件の不明点、バックエンド、フロントエンド改修範囲の洗い出し
+            </Text>
           </View>
           <View style={styles.subsection}>
             <Text style={styles.title}>CRMの開発（2022/10〜2023/5）</Text>
