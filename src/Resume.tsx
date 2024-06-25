@@ -191,10 +191,7 @@ const Resume: React.FC = () => (
         <Text style={styles.text}>・CSS(Chakura UI)</Text>
         <Text style={styles.text}>・Dockerでの環境構築</Text>
         <Text style={styles.text}>・NestJSでのエンドポイント開発</Text>
-        <Text style={styles.text}>・My SQL</Text>
-        <Text style={styles.text}>
-          - シードデータの追加や実装に必要なデータの確認や挿入時に使用する程度
-        </Text>
+        <Text style={styles.text}>・My SQLでのCRUD操作</Text>
       </View>
       <View style={styles.section}>
         <Text style={styles.subHeader}>スキル（実務経験なし）</Text>
