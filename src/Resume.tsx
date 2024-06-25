@@ -187,11 +187,10 @@ const Resume: React.FC = () => (
             - 各ページstate(reducer/action)の新規・改修
           </Text>
         </View>
-        <Text style={styles.text}>・Type Script</Text>
-        <Text style={styles.text}>- 型定義ファイルの追加、propsへの型定義</Text>
+        <Text style={styles.text}>・Type Scriptによる型定義</Text>
         <Text style={styles.text}>・CSS(Chakura UI)</Text>
-        <Text style={styles.text}>・Docker</Text>
-        <Text style={styles.text}>- 環境構築レベル</Text>
+        <Text style={styles.text}>・Dockerでの環境構築</Text>
+        <Text style={styles.text}>・NestJSでのエンドポイント開発</Text>
         <Text style={styles.text}>・My SQL</Text>
         <Text style={styles.text}>
           - シードデータの追加や実装に必要なデータの確認や挿入時に使用する程度
