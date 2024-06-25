@@ -122,7 +122,8 @@ const Resume: React.FC = () => (
             <Text style={styles.text}>・平均 6〜8 人</Text>
             <Text style={styles.text}>使用した技術 </Text>
             <Text style={styles.text}>
-              React(v18), Type Script, CSS(Chakura UI), My SQL, Docker,
+              React(v18), Type Script, CSS(Chakura UI),NestJS(node.js), My SQL,
+              Docker,
             </Text>
             <Text style={styles.text}>主な担当業務</Text>
             <Text style={styles.text}>
@@ -131,6 +132,7 @@ const Resume: React.FC = () => (
             <Text style={styles.text}>
               ・フロントエンド部分のパフォーマンス計測・改善
             </Text>
+            <Text style={styles.text}>・API開発</Text>
             <Text style={styles.text}>
               ・要件の不明点、バックエンド、フロントエンド改修範囲の洗い出し
             </Text>
