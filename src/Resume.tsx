@@ -193,7 +193,7 @@ const Resume: React.FC = () => (
         <Text style={styles.text}>・Type Scriptによる型定義</Text>
         <Text style={styles.text}>・CSS(Chakura UI)</Text>
         <Text style={styles.text}>・Dockerでの環境構築</Text>
-        <Text style={styles.text}>・NestJSでのエンドポイント開発</Text>
+        <Text style={styles.text}>・NestJSでのAPI開発</Text>
         <Text style={styles.text}>・My SQLでのCRUD操作</Text>
       </View>
       <View style={styles.section}>
