@@ -79,7 +79,7 @@ const Resume: React.FC = () => (
         <View style={styles.detail}>
           <Text style={styles.text}>祝井 直樹</Text>
           <Text style={styles.text}>ID: nok181701</Text>
-          <Text style={styles.text}>年齢: 26</Text>
+          <Text style={styles.text}>年齢: 27</Text>
         </View>
       </View>
       <View style={styles.section}>
