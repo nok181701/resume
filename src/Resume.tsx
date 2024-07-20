@@ -161,7 +161,7 @@ const Resume: React.FC = () => (
           </Text>
           <Text style={styles.text}>- WEBデザイン・ECサイト運用</Text>
           <Text style={styles.text}>
-            - 自社サイトの改修や楽天市場の運用を担当
+            - 自社サイト宝石広場の改修や楽天市場の運用を担当
           </Text>
           <Text style={styles.text}>開発規模 </Text>
           <Text style={styles.text}>8~10人</Text>
