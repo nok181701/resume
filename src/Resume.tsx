@@ -156,7 +156,9 @@ const Resume: React.FC = () => (
           </View>
         </View>
         <View style={styles.detail}>
-          <Text style={styles.title}>株式会社宝石広場（2020/4〜2022/9）</Text>
+          <Text style={styles.title}>
+            株式会社ユーズカンパニー（2020/4〜2022/9）
+          </Text>
           <Text style={styles.text}>- WEBデザイン・ECサイト運用</Text>
           <Text style={styles.text}>
             - 自社サイトの改修や楽天市場の運用を担当
