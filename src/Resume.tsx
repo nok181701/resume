@@ -132,12 +132,12 @@ const Resume: React.FC = () => (
             <Text style={styles.text}>
               ・フロントエンド部分のパフォーマンス計測・改善
             </Text>
-            <Text style={styles.text}>・API開発</Text>
+            <Text style={styles.text}>・フロントAPI開発</Text>
             <Text style={styles.text}>
               ・要件の不明点、バックエンド、フロントエンド改修範囲の洗い出し
             </Text>
             <Text style={styles.text}>
-              ・API、コンポーネント仕様書の作成・修正
+              ・API・コンポーネント仕様書の作成・修正
             </Text>
           </View>
           <View style={styles.subsection}>
