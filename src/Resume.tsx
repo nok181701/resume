@@ -188,9 +188,6 @@ const Resume: React.FC = () => (
           <Text style={styles.text}>- componentの設計・改修</Text>
           <Text style={styles.text}>- Custom Hookの追加・改修</Text>
           <Text style={styles.text}>- 各ページview/viewModel/の新規・改修</Text>
-          <Text style={styles.text}>
-            - 各ページstate(reducer/action)の新規・改修
-          </Text>
         </View>
         <Text style={styles.text}>・Type Scriptによる型定義</Text>
         <Text style={styles.text}>・CSS(Chakura UI)</Text>
