@@ -152,7 +152,7 @@ const Resume: React.FC = () => (
               ・ローコードプラットフォームでは対応不可な部分の開発
             </Text>
             <Text style={styles.text}>・パフォーマンスチューニング </Text>
-            <Text style={styles.text}>・単体/結合テストやリリースの実施</Text>
+            <Text style={styles.text}>・単体テストの作成</Text>
           </View>
         </View>
         <View style={styles.detail}>
