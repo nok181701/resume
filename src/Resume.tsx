@@ -107,8 +107,18 @@ const Resume: React.FC = () => (
       <View style={styles.section}>
         <Text style={styles.subHeader}>職歴</Text>
         <View style={styles.detail}>
+          <Text style={styles.title}>株式会社トライト（現在）</Text>
+          <Text style={styles.text}>
+            -
+            自社サイト『トライトワーカー』『介護ワーカー』や『医療ワーカー』など求人サイトの開発
+          </Text>
+          <Text style={styles.text}>
+            アジャイル開発下でのフロントエンドを担当
+          </Text>
+        </View>
+        <View style={styles.detail}>
           <Text style={styles.title}>
-            株式会社ウェブエッジ（2022/10〜現在）
+            株式会社ウェブエッジ（2022/10〜2024/9）
           </Text>
           <Text style={styles.text}>- SESとして主に開発フェーズを担当</Text>
           <View style={styles.subsection}>
