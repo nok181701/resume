@@ -192,6 +192,11 @@ const Resume: React.FC = () => (
         </View>
       </View>
       <View style={styles.section}>
+        <Text style={styles.subHeader}>副業</Text>
+        <Text style={styles.title}>株式会社UK Holdings（2020/4〜2022/9）</Text>
+        <Text style={styles.text}>バス釣り向けのアプリケーション開発</Text>
+      </View>
+      <View style={styles.section}>
         <Text style={styles.subHeader}>スキル（実務経験あり）</Text>
         <Text style={styles.text}>・React</Text>
         <View style={styles.subsection}>
