@@ -113,7 +113,19 @@ const Resume: React.FC = () => (
             自社サイト『トライトワーカー』『介護ワーカー』や『医療ワーカー』など求人サイトの開発
           </Text>
           <Text style={styles.text}>
-            アジャイル開発下でのフロントエンドを担当
+            スクラム開発下でのフロントエンドを担当
+          </Text>
+          <Text style={styles.text}>開発規模 </Text>
+          <Text style={styles.text}>開発課25人うち所属（UIUXチーム）8人</Text>
+          <Text style={styles.text}>使用した技術 </Text>
+          <Text style={styles.text}>Next.js(v14), Type Script</Text>
+          <Text style={styles.text}>主な担当業務</Text>
+          <Text style={styles.text}>LPO環境構築（リプレイス作業）</Text>
+          <Text style={styles.text}>
+            LPO環境構築（PHPからのリプレイス作業）
+          </Text>
+          <Text style={styles.text}>
+            バックエンド/インフラ/ディレクターチームとの調整
           </Text>
         </View>
         <View style={styles.detail}>
