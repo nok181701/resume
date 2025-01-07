@@ -72,6 +72,7 @@ const Resume: React.FC = () => (
         <Text style={styles.text}>
           リユース業界にてWebデザイナー・ECサイト運営として従事し、LPや自社ECサイトの静的ページを設計から構築まで担当。
           2022年に株式会社ウェブエッジに入社し、SESとして主にフロントエンドの開発に携わりWebフロントの設計やReact.js、JavaScript/TypeScriptで実装を担当。
+          現在は株式会社トライトにて自社開発でUIUXエンジニアとして開発。
         </Text>
       </View>
       <View style={styles.section}>
