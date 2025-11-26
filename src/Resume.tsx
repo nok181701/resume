@@ -70,9 +70,9 @@ const Resume: React.FC = () => (
       <View style={styles.section}>
         <Text style={styles.subHeader}>概要</Text>
         <Text style={styles.text}>
-          リユース業界にてWebデザイナー・ECサイト運営として従事し、LPや自社ECサイトの静的ページを設計から構築まで担当。
-          2022年に株式会社ウェブエッジに入社し、SESとして主にフロントエンドの開発に携わりWebフロントの設計やReact.js、JavaScript/TypeScriptで実装を担当。
-          現在は株式会社トライトにて自社開発でUIUXエンジニアとして開発。
+          リユース業界にてWebデザイナー・ECサイト運営として従事し、LPや自社ECサイトの静的ページを設計から実装まで担当。
+          2022年に株式会社ウェブエッジに入社し、SESとして主にフロントエンドの開発に携わる。
+          現在は株式会社トライトにて自社開発でUIUXやSEOの改善エンジニアとして開発。
         </Text>
       </View>
       <View style={styles.section}>
@@ -80,30 +80,26 @@ const Resume: React.FC = () => (
         <View style={styles.detail}>
           <Text style={styles.text}>祝井 直樹</Text>
           <Text style={styles.text}>ID: nok181701</Text>
-          <Text style={styles.text}>年齢: 27</Text>
+          <Text style={styles.text}>年齢: 28</Text>
         </View>
       </View>
       <View style={styles.section}>
         <Text style={styles.subHeader}>得意なこと</Text>
         <Text style={styles.text}>Webサイト・アプリケーションの開発</Text>
         <Text style={styles.text}>
-          ・LPやコーポレートサイトなど、静的ページの設計から構築まで一通りをこなせる
-        </Text>
-        <Text style={styles.text}>
-          ・対象のプロダクトが訴求・解決する力を理解し設計・デザインUIに落とし込む
+          ・LP/Webアプリ/ネイティブアプリ（Android/iOS）の設計から構築まで一通りをこなせる
         </Text>
         <Text style={styles.text}>
           ・デザイナー（仕様の相談）、バックエンド（APIを通じたデータ制御のやり取り）との連携
         </Text>
         <Text style={styles.text}>
-          ・スクラム開発を用いた開発・チームビルディング
+          ・SEOやサイトパフォーマンスを意識した実装、インフラを意識したNext.jsのレンダリング適切化が可能
         </Text>
+        <Text style={styles.text}>フロント/バックの実装</Text>
       </View>
       <View style={styles.section}>
-        <Text style={styles.subHeader}>苦手なこと</Text>
-        <Text style={styles.text}>
-          サーバーサイド・インフラ部分の業務（業務経験が浅い）
-        </Text>
+        <Text style={styles.subHeader}>課題・苦手なこと</Text>
+        <Text style={styles.text}>インフラ部分の実務経験</Text>
       </View>
       <View style={styles.section}>
         <Text style={styles.subHeader}>職歴</Text>
@@ -111,24 +107,49 @@ const Resume: React.FC = () => (
           <Text style={styles.title}>株式会社トライト（現在）</Text>
           <Text style={styles.text}>
             -
-            自社サイト『トライトワーカー』『介護ワーカー』や『医療ワーカー』など求人サイトの開発
+            自社サイト『トライトワーカー』『看護師ワーカー』や『介護ワーカー』など求人サイトの開発
           </Text>
-          <Text style={styles.text}>
-            スクラム開発下でのフロントエンドを担当
-          </Text>
+          <Text style={styles.text}> </Text>
           <Text style={styles.text}>開発規模 </Text>
-          <Text style={styles.text}>開発課25人うち所属（UIUXチーム）8人</Text>
+          <Text style={styles.text}>開発課25人うち所属(UIUXチーム)8人</Text>
+          <Text style={styles.text}> </Text>
           <Text style={styles.text}>使用した技術 </Text>
-          <Text style={styles.text}>Next.js(v14), Type Script</Text>
+          <Text style={styles.text}>主にNext.js(v13~v14), TypeScript</Text>
+          <Text style={styles.text}> </Text>
           <Text style={styles.text}>主な担当業務</Text>
-          <Text style={styles.text}>LPO環境構築（リプレイス作業）</Text>
+          <Text style={styles.title}>
+            LPO環境構築（PHPで実装されている旧LPサイトのリプレイス作業）
+          </Text>
+          <Text style={styles.text}>- 実装</Text>
+          <Text style={styles.text}>- コードレビュー</Text>
           <Text style={styles.text}>
-            LPO環境構築（PHPからのリプレイス作業）
+            -バックエンド/インフラ/ディレクターチームとの仕様確認・調整
+          </Text>
+          <Text style={styles.text}>- SESの方のサポート</Text>
+          <Text style={styles.text}> </Text>
+          <Text style={styles.title}>
+            旧グランドサイトから新サイトへの一部移管作業
+          </Text>
+          <Text style={styles.text}>- コラム特集ページの移管作業</Text>
+          <Text style={styles.text}>
+            - SREチームとのインフラ構成の変更・調整
+          </Text>
+          <Text style={styles.text}>- Next.js v13→v14へのリプレイス実装</Text>
+          <Text style={styles.text}>
+            - インフラ構成変更によるNext.jsのレンダリング適切化
+          </Text>
+
+          <Text style={styles.text}> </Text>
+          <Text style={styles.title}>SEO改善</Text>
+          <Text style={styles.text}>
+            -
+            旧グランドサイトの求人一覧/求人詳細ページに新サイトURLのcanonical設定
           </Text>
           <Text style={styles.text}>
-            バックエンド/インフラ/ディレクターチームとの調整
+            - 各求人ページに対するテストコードの作成
           </Text>
         </View>
+        <Text style={styles.text}> </Text>
         <View style={styles.detail}>
           <Text style={styles.title}>
             株式会社ウェブエッジ（2022/10〜2024/9）
@@ -145,8 +166,8 @@ const Resume: React.FC = () => (
             <Text style={styles.text}>・平均 6〜8 人</Text>
             <Text style={styles.text}>使用した技術 </Text>
             <Text style={styles.text}>
-              React(v18), Type Script, CSS(Chakura UI),NestJS(node.js), My SQL,
-              Docker,
+              React(v18), TypeScript, CSS(Chakra UI), NestJS(Node.js), MySQL,
+              Docker
             </Text>
             <Text style={styles.text}>主な担当業務</Text>
             <Text style={styles.text}>
@@ -168,7 +189,7 @@ const Resume: React.FC = () => (
             <Text style={styles.text}>開発規模 </Text>
             <Text style={styles.text}>3人</Text>
             <Text style={styles.text}>使用した技術 </Text>
-            <Text style={styles.text}>Java Script(ES6), My SQL</Text>
+            <Text style={styles.text}>JavaScript(ES6), MySQL</Text>
             <Text style={styles.text}>主な担当業務</Text>
             <Text style={styles.text}>・クライアントとの機能要件の調整</Text>
             <Text style={styles.text}>
@@ -190,7 +211,7 @@ const Resume: React.FC = () => (
           <Text style={styles.text}>8~10人</Text>
           <Text style={styles.text}>使用した技術 </Text>
           <Text style={styles.text}>
-            Photoshop, HTML, CSS, Java Script, jQuery
+            Photoshop, HTML, CSS, JavaScript, jQuery
           </Text>
           <Text style={styles.text}> 主な担当業務</Text>
           <Text style={styles.text}>
@@ -208,30 +229,43 @@ const Resume: React.FC = () => (
         <Text style={styles.subHeader}>副業</Text>
         <Text style={styles.title}>株式会社UK Holdings（2020/4〜2022/9）</Text>
         <Text style={styles.text}>バス釣り向けのアプリケーション開発</Text>
+        <Text style={styles.text}>- フロント部分を担当</Text>
+        <Text style={styles.text}>
+          - フロントはReact （TypeScript）でバックはNode.js（NestJS）
+        </Text>
+        <Text style={styles.text}></Text>
+        <Text style={styles.title}>株式会社ギャス（2025/4〜）</Text>
+        <Text style={styles.text}>
+          FXデモトレードアプリ（iOS/Android）の開発
+        </Text>
+        <Text style={styles.text}>- フロント/バックを担当</Text>
+        <Text style={styles.text}>
+          - フロントはReact Native（JavaScript）でバックはPHP（Laravel）
+        </Text>
+        <Text style={styles.text}>
+          - 既存画面の修正、新規画面の実装。それに伴うAPI・バッチの実装を担当
+        </Text>
       </View>
       <View style={styles.section}>
         <Text style={styles.subHeader}>スキル（実務経験あり）</Text>
         <Text style={styles.text}>・React</Text>
-        <View style={styles.subsection}>
-          <Text style={styles.text}>- componentの設計・改修</Text>
-          <Text style={styles.text}>- Custom Hookの追加・改修</Text>
-          <Text style={styles.text}>- 各ページview/viewModel/の新規・改修</Text>
-        </View>
-        <Text style={styles.text}>・Type Scriptによる型定義</Text>
-        <Text style={styles.text}>・CSS(Chakura UI)</Text>
-        <Text style={styles.text}>・Dockerでの環境構築</Text>
-        <Text style={styles.text}>・NestJSでのAPI開発</Text>
-        <Text style={styles.text}>・My SQLでのCRUD操作</Text>
+        <Text style={styles.text}>・React Native</Text>
+        <Text style={styles.text}>・TypeScript</Text>
+        <Text style={styles.text}>・CSS(Chakra UI)</Text>
+        <Text style={styles.text}>・Docker</Text>
+        <Text style={styles.text}>・NestJS</Text>
+        <Text style={styles.text}>・PHP (Laravel v10)</Text>
+        <Text style={styles.text}>・MySQL</Text>
       </View>
       <View style={styles.section}>
         <Text style={styles.subHeader}>スキル（実務経験なし）</Text>
         <Text style={styles.text}>・Express</Text>
-        <Text style={styles.text}>・Mongo DB</Text>
+        <Text style={styles.text}>・MongoDB</Text>
       </View>
       <View style={styles.section}>
         <Text style={styles.subHeader}>趣味プロダクト</Text>
         <Text style={styles.text}>
-          git hub: https://github.com/nok181701/medal-map
+          GitHub: https://github.com/nok181701/medal-map
         </Text>
         <Text style={styles.text}>
           プロダクト: https://medal-map.vercel.app/
