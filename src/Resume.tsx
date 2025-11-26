@@ -87,15 +87,18 @@ const Resume: React.FC = () => (
         <Text style={styles.subHeader}>得意なこと</Text>
         <Text style={styles.text}>Webサイト・アプリケーションの開発</Text>
         <Text style={styles.text}>
-          ・LP/Webアプリ/ネイティブアプリ（Android/iOS）の設計から構築まで一通りをこなせる
+          -
+          LP/Webアプリ/ネイティブアプリ（Android/iOS）の設計から構築まで一通りをこなせる
         </Text>
         <Text style={styles.text}>
-          ・デザイナー（仕様の相談）、バックエンド（APIを通じたデータ制御のやり取り）との連携
+          -
+          デザイナー（仕様の相談）、バックエンド（APIを通じたデータ制御のやり取り）との連携
         </Text>
         <Text style={styles.text}>
-          ・SEOやサイトパフォーマンスを意識した実装、インフラを意識したNext.jsのレンダリング適切化が可能
+          -
+          SEOやサイトパフォーマンスを意識した実装、インフラを意識したNext.jsのレンダリング適切化が可能
         </Text>
-        <Text style={styles.text}>フロント/バックの実装</Text>
+        <Text style={styles.text}>- フロント/バックの実装</Text>
       </View>
       <View style={styles.section}>
         <Text style={styles.subHeader}>課題・苦手なこと</Text>
@@ -106,15 +109,14 @@ const Resume: React.FC = () => (
         <View style={styles.detail}>
           <Text style={styles.title}>株式会社トライト（現在）</Text>
           <Text style={styles.text}>
-            -
-            自社サイト『トライトワーカー』『看護師ワーカー』や『介護ワーカー』など求人サイトの開発
+            自社サイト『トライトワーカー』『看護師ワーカー』『介護ワーカー』など求人サイトの開発
           </Text>
           <Text style={styles.text}> </Text>
-          <Text style={styles.text}>開発規模 </Text>
-          <Text style={styles.text}>開発課25人うち所属(UIUXチーム)8人</Text>
+          <Text style={styles.text}>開発規模</Text>
+          <Text style={styles.text}>- 開発課25人うち所属(UIUXチーム)8人</Text>
           <Text style={styles.text}> </Text>
-          <Text style={styles.text}>使用した技術 </Text>
-          <Text style={styles.text}>主にNext.js(v13~v14), TypeScript</Text>
+          <Text style={styles.text}>使用した技術</Text>
+          <Text style={styles.text}>- 主にNext.js(v13~v14), TypeScript</Text>
           <Text style={styles.text}> </Text>
           <Text style={styles.text}>主な担当業務</Text>
           <Text style={styles.title}>
@@ -123,7 +125,7 @@ const Resume: React.FC = () => (
           <Text style={styles.text}>- 実装</Text>
           <Text style={styles.text}>- コードレビュー</Text>
           <Text style={styles.text}>
-            -バックエンド/インフラ/ディレクターチームとの仕様確認・調整
+            - バックエンド/インフラ/ディレクターチームとの仕様確認・調整
           </Text>
           <Text style={styles.text}>- SESの方のサポート</Text>
           <Text style={styles.text}> </Text>
@@ -134,7 +136,9 @@ const Resume: React.FC = () => (
           <Text style={styles.text}>
             - SREチームとのインフラ構成の変更・調整
           </Text>
-          <Text style={styles.text}>- Next.js v13→v14へのリプレイス実装</Text>
+          <Text style={styles.text}>
+            - Next.js pages router→app routerへの移行
+          </Text>
           <Text style={styles.text}>
             - インフラ構成変更によるNext.jsのレンダリング適切化
           </Text>
@@ -162,66 +166,67 @@ const Resume: React.FC = () => (
             <Text style={styles.text}>
               スクラム開発下でのフロントエンドを担当
             </Text>
-            <Text style={styles.text}>開発規模 </Text>
-            <Text style={styles.text}>・平均 6〜8 人</Text>
-            <Text style={styles.text}>使用した技術 </Text>
+            <Text style={styles.text}>開発規模</Text>
+            <Text style={styles.text}>- 平均 6〜8人</Text>
+            <Text style={styles.text}>使用した技術</Text>
             <Text style={styles.text}>
-              React(v18), TypeScript, CSS(Chakra UI), NestJS(Node.js), MySQL,
+              - React(v18), TypeScript, CSS(Chakra UI), NestJS(Node.js), MySQL,
               Docker
             </Text>
             <Text style={styles.text}>主な担当業務</Text>
             <Text style={styles.text}>
-              ・デザインと機能要件に応じてWEBフロントの実装
+              - デザインと機能要件に応じてWebフロントの実装
             </Text>
             <Text style={styles.text}>
-              ・フロントエンド部分のパフォーマンス計測・改善
+              - フロントエンド部分のパフォーマンス計測・改善
             </Text>
-            <Text style={styles.text}>・フロントAPI開発</Text>
+            <Text style={styles.text}>- フロントAPI開発</Text>
             <Text style={styles.text}>
-              ・要件の不明点、バックエンド、フロントエンド改修範囲の洗い出し
+              - 要件の不明点、バックエンド、フロントエンド改修範囲の洗い出し
             </Text>
             <Text style={styles.text}>
-              ・API・コンポーネント仕様書の作成・修正
+              - API・コンポーネント仕様書の作成・修正
             </Text>
           </View>
           <View style={styles.subsection}>
             <Text style={styles.title}>CRMの開発（2022/10〜2023/5）</Text>
-            <Text style={styles.text}>開発規模 </Text>
-            <Text style={styles.text}>3人</Text>
-            <Text style={styles.text}>使用した技術 </Text>
-            <Text style={styles.text}>JavaScript(ES6), MySQL</Text>
+            <Text style={styles.text}>開発規模</Text>
+            <Text style={styles.text}>- 3人</Text>
+            <Text style={styles.text}>使用した技術</Text>
+            <Text style={styles.text}>- JavaScript(ES6), MySQL</Text>
             <Text style={styles.text}>主な担当業務</Text>
-            <Text style={styles.text}>・クライアントとの機能要件の調整</Text>
+            <Text style={styles.text}>- クライアントとの機能要件の調整</Text>
             <Text style={styles.text}>
-              ・ローコードプラットフォームでは対応不可な部分の開発
+              - ローコードプラットフォームでは対応不可な部分の開発
             </Text>
-            <Text style={styles.text}>・パフォーマンスチューニング </Text>
-            <Text style={styles.text}>・単体テストの作成</Text>
+            <Text style={styles.text}>- パフォーマンスチューニング</Text>
+            <Text style={styles.text}>- 単体テストの作成</Text>
           </View>
         </View>
         <View style={styles.detail}>
           <Text style={styles.title}>
             株式会社ユーズカンパニー（2020/4〜2022/9）
           </Text>
-          <Text style={styles.text}>- WEBデザイン・ECサイト運用</Text>
+          <Text style={styles.text}>Webデザイン・ECサイト運用</Text>
           <Text style={styles.text}>
-            - 自社サイト宝石広場の改修や楽天市場の運用を担当
+            自社サイト宝石広場の改修や楽天市場の運用を担当
           </Text>
-          <Text style={styles.text}>開発規模 </Text>
-          <Text style={styles.text}>8~10人</Text>
-          <Text style={styles.text}>使用した技術 </Text>
+          <Text style={styles.text}>開発規模</Text>
+          <Text style={styles.text}>- 8〜10人</Text>
+          <Text style={styles.text}>使用した技術</Text>
           <Text style={styles.text}>
-            Photoshop, HTML, CSS, JavaScript, jQuery
+            - Photoshop, HTML, CSS, JavaScript, jQuery
           </Text>
-          <Text style={styles.text}> 主な担当業務</Text>
+          <Text style={styles.text}>主な担当業務</Text>
           <Text style={styles.text}>
-            ・ 自社サイトやモール（楽天市場・Yahooショッピング）の改修・運用
-          </Text>
-          <Text style={styles.text}>
-            ・ バナー、LPの設計からデザイン、コーディング
+            - 自社サイトやモール（楽天市場・Yahooショッピング）の改修・運用
           </Text>
           <Text style={styles.text}>
-            ・楽天市場の運用(商品ページの作成、販促クーポンの実施やメルマガの運用)
+            - バナー、LPの設計からデザイン、コーディング
+          </Text>
+          <Text style={styles.text}>
+            -
+            楽天市場の運用（商品ページの作成、販促クーポンの実施やメルマガの運用）
           </Text>
         </View>
       </View>
@@ -248,19 +253,19 @@ const Resume: React.FC = () => (
       </View>
       <View style={styles.section}>
         <Text style={styles.subHeader}>スキル（実務経験あり）</Text>
-        <Text style={styles.text}>・React</Text>
-        <Text style={styles.text}>・React Native</Text>
-        <Text style={styles.text}>・TypeScript</Text>
-        <Text style={styles.text}>・CSS(Chakra UI)</Text>
-        <Text style={styles.text}>・Docker</Text>
-        <Text style={styles.text}>・NestJS</Text>
-        <Text style={styles.text}>・PHP (Laravel v10)</Text>
-        <Text style={styles.text}>・MySQL</Text>
+        <Text style={styles.text}>- React</Text>
+        <Text style={styles.text}>- React Native (v0.75)</Text>
+        <Text style={styles.text}>- TypeScript</Text>
+        <Text style={styles.text}>- CSS(Chakra UI)</Text>
+        <Text style={styles.text}>- Docker</Text>
+        <Text style={styles.text}>- NestJS</Text>
+        <Text style={styles.text}>- PHP (Laravel v10)</Text>
+        <Text style={styles.text}>- MySQL</Text>
       </View>
       <View style={styles.section}>
         <Text style={styles.subHeader}>スキル（実務経験なし）</Text>
-        <Text style={styles.text}>・Express</Text>
-        <Text style={styles.text}>・MongoDB</Text>
+        <Text style={styles.text}>- Express</Text>
+        <Text style={styles.text}>- MongoDB</Text>
       </View>
       <View style={styles.section}>
         <Text style={styles.subHeader}>趣味プロダクト</Text>
