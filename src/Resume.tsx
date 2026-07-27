@@ -155,6 +155,9 @@ const Resume: React.FC = () => (
             - SEO向上のためサイトマップ・構造化データの実装
           </Text>
           <Text style={styles.text}> </Text>
+          <Text style={styles.title}>EOL対応</Text>
+          <Text style={styles.text}>- コンテンツ終了に伴うディスコン作業</Text>
+          <Text style={styles.text}> </Text>
           <Text style={styles.title}>AI活用による開発効率化</Text>
           <Text style={styles.text}>
             - 複数の職種サイトを横断する開発を効率化するため、GitHub
@@ -175,9 +178,6 @@ const Resume: React.FC = () => (
           <Text style={styles.text}>
             - 新規サービスへのcanonicalタグ設定によりSEO評価を既存サービスへ集約
           </Text>
-          <Text style={styles.text}> </Text>
-          <Text style={styles.title}>EOL対応</Text>
-          <Text style={styles.text}>- コンテンツ終了に伴うディスコン作業</Text>
           <Text style={styles.text}> </Text>
           <Text style={styles.title}>Sentryエラー対応</Text>
           <Text style={styles.text}>- Sentryでのエラー検知と解消対応</Text>
