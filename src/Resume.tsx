@@ -38,35 +38,37 @@ const styles = StyleSheet.create({
     padding: 30,
     fontFamily: "NotoSansJP",
   },
+  // 下の余白を marginBottom で取ると、ページ末尾に収まるブロックでも余白分はみ出す扱いになり
+  // ブロック全体が次ページへ送られて大きな空白ができるため、paddingBottom で取る
   section: {
-    marginBottom: 10,
+    paddingBottom: 10,
   },
   subsection: {
     marginLeft: 5,
     paddingBottom: 16,
   },
   header: {
-    fontSize: 20,
+    fontSize: 18,
     marginBottom: 10,
     textAlign: "center",
     fontWeight: "bold",
   },
   subHeader: {
-    fontSize: 16,
+    fontSize: 14,
     marginVertical: 2,
     fontWeight: "bold",
     borderBottomWidth: 0.7,
     borderBottomColor: "#b8b8b8",
   },
-  text: {
-    fontSize: 12,
-    fontWeight: "normal",
-    lineHeight: 1.4,
+  // 本文は職務内容(表)と同じ文字サイズに揃える
+  bodyText: {
+    fontSize: 8.5,
+    lineHeight: 1.35,
     marginBottom: 4,
   },
   title: {
     marginTop: 3,
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: "bold",
   },
   meta: {
@@ -81,12 +83,11 @@ const styles = StyleSheet.create({
   },
   detail: {
     marginTop: 7,
-    marginBottom: 10,
-    fontSize: 12,
+    paddingBottom: 10,
+    fontSize: 11,
     fontWeight: "normal",
   },
-  // marginBottom を付けると、ページ末尾に収まる表でも余白分はみ出す扱いになり
-  // 表全体が次ページへ送られて大きな空白ができるため、表の下の余白は親要素の paddingBottom で取る
+  // 表の下の余白も同じ理由で親要素の paddingBottom で取る
   table: {
     borderWidth: 1,
     borderStyle: "solid",
@@ -105,7 +106,7 @@ const styles = StyleSheet.create({
     width: "22%",
     backgroundColor: "#f2f2f2",
     padding: 4,
-    fontSize: 9,
+    fontSize: 8.5,
     fontWeight: "bold",
     borderRightWidth: 1,
     borderRightColor: "#c9c9c9",
@@ -113,29 +114,44 @@ const styles = StyleSheet.create({
   tableValue: {
     width: "78%",
     padding: 4,
-    fontSize: 9,
+    fontSize: 8.5,
     lineHeight: 1.35,
   },
+  skillHeaderRow: {
+    flexDirection: "row",
+    backgroundColor: "#f2f2f2",
+    fontWeight: "bold",
+    borderBottomWidth: 1,
+    borderBottomColor: "#c9c9c9",
+  },
   skillCategory: {
-    width: "20%",
+    width: "15%",
     backgroundColor: "#f2f2f2",
     padding: 4,
-    fontSize: 9,
+    fontSize: 8.5,
     fontWeight: "bold",
     borderRightWidth: 1,
     borderRightColor: "#c9c9c9",
   },
   skillName: {
-    width: "50%",
+    width: "22%",
     padding: 4,
-    fontSize: 9,
+    fontSize: 8.5,
     borderRightWidth: 1,
     borderRightColor: "#c9c9c9",
   },
   skillYears: {
-    width: "30%",
+    width: "12%",
     padding: 4,
-    fontSize: 9,
+    fontSize: 8.5,
+    borderRightWidth: 1,
+    borderRightColor: "#c9c9c9",
+  },
+  skillDesc: {
+    width: "51%",
+    padding: 4,
+    fontSize: 8.5,
+    lineHeight: 1.35,
   },
 });
 
@@ -145,37 +161,36 @@ const Resume: React.FC = () => (
       <View style={styles.section}>
         <Text style={styles.header}>職務経歴書</Text>
       </View>
+      <Text style={styles.subHeader} wrap={false} minPresenceAhead={60}>
+        概要
+      </Text>
       <View style={styles.section}>
-        <Text style={styles.subHeader}>概要</Text>
         <Text
-          style={styles.text}
+          style={styles.bodyText}
         >{`大学卒業後、7年間にわたりサイト・システム開発に従事しています。
 1社目では、自社ECサイトの画面改修やモール運営を担当しました。
 2社目では、SESエンジニアとしてCRM開発やSNSアプリケーション開発に従事しました。
 現在は、求人サイトのフロントエンド開発を担当。CakePHPからNext.jsへのリプレイスやSEO・パフォーマンス改善に取り組んでいます。
-また副業として参画し、フロント・バック拘らずネイティブアプリ開発や、SaaS開発にも携わっています。`}</Text>
+また副業として参画し、フロント・バックを問わずネイティブアプリ開発や、SaaS開発にも携わっています。`}</Text>
       </View>
+      <Text style={styles.subHeader} wrap={false} minPresenceAhead={60}>
+        基本情報
+      </Text>
       <View style={styles.section}>
-        <Text style={styles.subHeader}>基本情報</Text>
         <View style={styles.detail}>
-          <Text style={styles.text}>祝井 直樹</Text>
-          <Text style={styles.text}>年齢: 29</Text>
+          <Text style={styles.bodyText}>祝井 直樹</Text>
+          <Text style={styles.bodyText}>年齢: 29</Text>
         </View>
       </View>
+      <Text style={styles.subHeader} wrap={false} minPresenceAhead={60}>
+        職歴
+      </Text>
       <View style={styles.section}>
-        <Text style={styles.subHeader}>自己PR</Text>
-        <Text
-          style={styles.text}
-        >{`自分の担当範囲にとどまらずプロジェクトを推し進めることが得意です。バックエンド側にサーバーサイドの仕様を確認したり、SREチームへインフラ構成を共有して諸々の申請を行うなどはもちろん、仕様の確認は事業部側にも働きかけ、密にコミュニケーションを取りながら進めています。GTMの発火確認や外部ABテストツールの導入確認など、事業部側に確認が必要な内容も自ら働きかけた経験がございます。
-また、実装やコードレビューの際も、そのプロジェクトの仕様、インフラ構成を考慮したうえで判断するようにしています。バックエンド・インフラ・事業部など、関わる範囲を限定せずに動くことが自分の強みだと考えています。`}</Text>
-      </View>
-      <View style={styles.section}>
-        <Text style={styles.subHeader}>職歴</Text>
         <View style={styles.detail}>
           <Text style={styles.title}>
             株式会社トライトキャリア（2024/10〜現在）
           </Text>
-          <Text style={styles.text}>
+          <Text style={styles.bodyText}>
             求人サイト『看護師ワーカー』をはじめ、介護・保育など複数の職種特化型求人サイトのフロントエンド開発を担当
           </Text>
 
@@ -218,11 +233,12 @@ const Resume: React.FC = () => (
                 <Text style={styles.tableLabel}>結果</Text>
                 <Text
                   style={styles.tableValue}
-                >{`POS職種で2025/10から施策実施中（月間架電数 約13,110件）。
-- 番号検索率: 平均5.1%（671件/13,110架電）
-- 検索結果からのLP CTR: 平均10.9%
+                >{`1職種で2025/10から施策実施中（月間架電数 約1.3万件）。
+これまで外部サイトに流れていた着信番号の検索ユーザーのうち、月に約70人が自社LPに流入し、約10件が求職者からの連絡につながっている。
+- 番号検索率: 約5%
+- 検索結果からのLP CTR: 約11%
 - LP内スクロール90%到達率: 約14%
-- 連絡ボタンクリック（接触アクション）: 月平均11件、CVR平均0.09%`}</Text>
+- 連絡ボタンクリック（接触アクション）: 月平均約10件`}</Text>
               </View>
               <View style={styles.tableRowLast}>
                 <Text style={styles.tableLabel}>利用技術</Text>
@@ -299,8 +315,8 @@ const Resume: React.FC = () => (
                 <Text
                   style={styles.tableValue}
                 >{`- コラム記事からの登録サイト流入数の増加（1職種での例）
-  - 移行時: コラム流入 9,000セッション/月、CV遷移 1.8件、成約 0.135件
-  - 12ヶ月後: コラム流入 39,600セッション/月、CV遷移 7.92件、成約 0.594件
+  - コラム流入: 移行時 約9,000 → 12ヶ月後 約40,000セッション/月
+  - 成約数: 移行後12ヶ月で約4倍に増加
 - 既存ドメインサイトのSEO評価向上。
 - コンテンツの有効活用・配信バリエーションの増加。`}</Text>
               </View>
@@ -432,7 +448,7 @@ CI（ymlファイル）に、/out配下のHTMLファイルをルート直下へm
           <Text style={styles.title}>
             株式会社ウェブエッジ（2022/10〜2024/9）
           </Text>
-          <Text style={styles.text}>
+          <Text style={styles.bodyText}>
             SESエンジニアとして複数のプロジェクトに参画
           </Text>
 
@@ -567,11 +583,15 @@ CI（ymlファイル）に、/out配下のHTMLファイルをルート直下へm
           </View>
         </View>
       </View>
+      <Text style={styles.subHeader} wrap={false} minPresenceAhead={60}>
+        副業
+      </Text>
       <View style={styles.section}>
-        <Text style={styles.subHeader}>副業</Text>
         <View style={styles.detail}>
           <Text style={styles.title}>株式会社ギャス（2025/4〜現在）</Text>
-          <Text style={styles.text}>業務委託として複数プロジェクトに参画</Text>
+          <Text style={styles.bodyText}>
+            業務委託として複数プロジェクトに参画
+          </Text>
 
           <View style={styles.subsection}>
             <Text style={styles.title}>
@@ -658,102 +678,155 @@ CI（ymlファイル）に、/out配下のHTMLファイルをルート直下へm
           </View>
         </View>
       </View>
+      <Text style={styles.subHeader} wrap={false} minPresenceAhead={60}>
+        スキル一覧
+      </Text>
       <View style={styles.section}>
-        <Text style={styles.subHeader}>スキル一覧（技術と経験年数）</Text>
         <View style={styles.table}>
+          <View style={styles.skillHeaderRow}>
+            <Text style={styles.skillCategory}>カテゴリ</Text>
+            <Text style={styles.skillName}>技術</Text>
+            <Text style={styles.skillYears}>経験年数</Text>
+            <Text style={styles.skillDesc}>内容</Text>
+          </View>
           <View style={styles.tableRow}>
             <Text style={styles.skillCategory}>言語</Text>
-            <Text style={styles.skillName}>JavaScript</Text>
-            <Text style={styles.skillYears}>7年</Text>
+            <Text style={styles.skillName}>JavaScript / TypeScript</Text>
+            <Text style={styles.skillYears}>7年 / 4年</Text>
+            <Text style={styles.skillDesc}>
+              実務・個人開発で日常的に使っていて、読み書きは問題なくできる。
+            </Text>
           </View>
           <View style={styles.tableRow}>
             <Text style={styles.skillCategory}></Text>
-            <Text style={styles.skillName}>TypeScript</Text>
-            <Text style={styles.skillYears}>4年</Text>
+            <Text style={styles.skillName}>PHP</Text>
+            <Text style={styles.skillYears}>1年半</Text>
+            <Text style={styles.skillDesc}>
+              実務でiOS/Androidアプリのバックエンド開発に使用。読み書きは問題なくできる。
+            </Text>
           </View>
           <View style={styles.tableRow}>
             <Text style={styles.skillCategory}>フレームワーク</Text>
-            <Text style={styles.skillName}>Next.js</Text>
-            <Text style={styles.skillYears}>4年</Text>
-          </View>
-          <View style={styles.tableRow}>
-            <Text style={styles.skillCategory}></Text>
-            <Text style={styles.skillName}>React</Text>
-            <Text style={styles.skillYears}>5年</Text>
+            <Text style={styles.skillName}>React / Next.js</Text>
+            <Text style={styles.skillYears}>5年 / 4年</Text>
+            <Text style={styles.skillDesc}>
+              実務・個人開発で日常的に使っていて、読み書きは問題なくできる。Next.jsでは、13・14系の実務経験があり、主要な機能は理解している。インフラ構成・サービスに合わせたレンダリング方式を意識して実装している。
+            </Text>
           </View>
           <View style={styles.tableRow}>
             <Text style={styles.skillCategory}></Text>
             <Text style={styles.skillName}>React Native</Text>
             <Text style={styles.skillYears}>1年半</Text>
-          </View>
-          <View style={styles.tableRow}>
-            <Text style={styles.skillCategory}></Text>
-            <Text style={styles.skillName}>CakePHP</Text>
-            <Text style={styles.skillYears}>2年</Text>
+            <Text style={styles.skillDesc}>
+              実務でiOS/Androidアプリの開発に使用。読み書きは問題なくできる。
+            </Text>
           </View>
           <View style={styles.tableRow}>
             <Text style={styles.skillCategory}></Text>
             <Text style={styles.skillName}>Laravel</Text>
             <Text style={styles.skillYears}>1年半</Text>
+            <Text style={styles.skillDesc}>
+              Laravel10系を実務で使用。主要な機能は理解している。
+            </Text>
+          </View>
+          <View style={styles.tableRow}>
+            <Text style={styles.skillCategory}></Text>
+            <Text style={styles.skillName}>CakePHP</Text>
+            <Text style={styles.skillYears}>2年</Text>
+            <Text style={styles.skillDesc}>
+              実務で既存システムのコードを読み、仕様を確認していた。主要な機能は理解している。
+            </Text>
           </View>
           <View style={styles.tableRow}>
             <Text style={styles.skillCategory}></Text>
             <Text style={styles.skillName}>NestJS</Text>
             <Text style={styles.skillYears}>1年</Text>
+            <Text style={styles.skillDesc}>
+              実務でSNSアプリのAPI開発に使用。
+            </Text>
           </View>
           <View style={styles.tableRow}>
             <Text style={styles.skillCategory}></Text>
             <Text style={styles.skillName}>Angular</Text>
             <Text style={styles.skillYears}>3ヶ月</Text>
+            <Text style={styles.skillDesc}>
+              実務で管理画面の開発に使用で勉強中。
+            </Text>
           </View>
           <View style={styles.tableRow}>
             <Text style={styles.skillCategory}>DB</Text>
             <Text style={styles.skillName}>MySQL</Text>
             <Text style={styles.skillYears}>3年</Text>
+            <Text style={styles.skillDesc}>
+              CRM開発やiOS/Androidアプリの実務で使用、データの登録・更新・集計などの処理を実装している。
+            </Text>
           </View>
           <View style={styles.tableRow}>
             <Text style={styles.skillCategory}>インフラ・配信</Text>
-            <Text style={styles.skillName}>
-              AWS（S3 / CloudFront / Systems Manager Parameter Store）
-            </Text>
+            <Text style={styles.skillName}>AWS</Text>
             <Text style={styles.skillYears}>2年</Text>
+            <Text style={styles.skillDesc}>
+              S3 / CloudFront / Systems Manager Parameter
+              Storeを使った配信構成を理解しており、実務ではSREチームに設定を依頼して連携している。
+            </Text>
           </View>
           <View style={styles.tableRow}>
             <Text style={styles.skillCategory}></Text>
-            <Text style={styles.skillName}>
-              Cloudflare（Workers / Pages / D1）
-            </Text>
+            <Text style={styles.skillName}>Cloudflare</Text>
             <Text style={styles.skillYears}>2ヶ月</Text>
+            <Text style={styles.skillDesc}>
+              個人開発でWorkers / D1 / R2を使用し、サイトを公開・運用している。
+            </Text>
           </View>
           <View style={styles.tableRowLast}>
             <Text style={styles.skillCategory}></Text>
             <Text style={styles.skillName}>Docker</Text>
             <Text style={styles.skillYears}>1年</Text>
+            <Text style={styles.skillDesc}>実務で開発環境の構築に使用。</Text>
           </View>
         </View>
       </View>
+      <Text style={styles.subHeader} wrap={false} minPresenceAhead={60}>
+        自己PR
+      </Text>
       <View style={styles.section}>
-        <Text style={styles.subHeader}>GitHub</Text>
-        <Text style={styles.text}>GitHub: https://github.com/nok181701</Text>
-        <Text style={styles.subHeader}>個人開発</Text>
-        <Text style={styles.text}>
+        <Text
+          style={styles.bodyText}
+        >{`自分の担当範囲にとどまらずプロジェクトを推し進めることが得意です。バックエンド側にサーバーサイドの仕様を確認したり、SREチームへインフラ構成を共有して諸々の申請を行うなどはもちろん、仕様の確認は事業部側にも働きかけ、密にコミュニケーションを取りながら進めています。GTMの発火確認や外部ABテストツールの導入確認、UATやリリースの日程調整も経験しています。
+また、実装やコードレビューの際も、そのプロジェクトの仕様、インフラ構成を考慮したうえで判断するようにしています。`}</Text>
+      </View>
+      <Text style={styles.subHeader} wrap={false} minPresenceAhead={60}>
+        GitHub
+      </Text>
+      <View style={styles.section}>
+        <Text style={styles.bodyText}>
+          GitHub: https://github.com/nok181701
+        </Text>
+        <Text style={styles.subHeader} wrap={false} minPresenceAhead={60}>
+          個人開発
+        </Text>
+        <Text style={styles.bodyText}>
           東京23区の町丁目ごとに治安・洪水・地盤（液状化）・高潮を可視化する引越し先リサーチダッシュボード。
         </Text>
-        <Text style={styles.text}>
+        <Text style={styles.bodyText}>
           引っ越し先を検討する中で、住むエリアの治安や災害リスクを確認したいと思ったものの、賃貸情報サイトの情報だけでは分かりづらいと感じたことがきっかけ。町丁目単位で治安・災害リスクを視覚的に把握できるツールを開発しました。
         </Text>
-        <Text style={styles.text}>
+        <Text style={styles.bodyText}>
           PR: https://github.com/nok181701/sumipita
         </Text>
-        <Text style={styles.text}>URL: https://sumipita.com</Text>
+        <Text style={styles.bodyText}>URL: https://sumipita.com</Text>
       </View>
+      <Text style={styles.subHeader} wrap={false} minPresenceAhead={60}>
+        最終学歴
+      </Text>
       <View style={styles.section}>
-        <Text style={styles.subHeader}>最終学歴</Text>
-        <Text style={styles.text}>武蔵大学 社会学部 社会学科 卒</Text>
+        <Text style={styles.bodyText}>武蔵大学 社会学部 社会学科 卒</Text>
       </View>
+      <Text style={styles.subHeader} wrap={false} minPresenceAhead={60}>
+        資格
+      </Text>
       <View style={styles.section}>
-        <Text style={styles.subHeader}>資格</Text>
-        <Text style={styles.text}>基本情報処理技術者（2023年11月）</Text>
+        <Text style={styles.bodyText}>基本情報処理技術者（2023年11月）</Text>
       </View>
     </Page>
   </Document>
