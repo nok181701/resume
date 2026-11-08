@@ -433,12 +433,14 @@ CI（ymlファイル）に、/out配下のHTMLファイルをルート直下へm
                 <Text
                   style={styles.tableValue}
                 >{`- GitHub Copilot向けのSkills / Instructions / Promptをmdファイルとして整備・導入
-- Confluence MCPサーバーの導入をSREチームに依頼`}</Text>
+- Confluence MCPサーバーの導入をSREチームに依頼
+- GitHub Agentic WorkflowsでDependabotのアラートを読み取り、脆弱性の解消を自動化`}</Text>
               </View>
               <View style={styles.tableRowLast}>
                 <Text style={styles.tableLabel}>利用技術</Text>
                 <Text style={styles.tableValue}>
-                  GitHub Copilot, Confluence MCP
+                  GitHub Copilot, Confluence MCP, GitHub Agentic Workflows,
+                  Dependabot
                 </Text>
               </View>
             </View>
@@ -616,14 +618,16 @@ CI（ymlファイル）に、/out配下のHTMLファイルをルート直下へm
               </View>
               <View style={styles.tableRow}>
                 <Text style={styles.tableLabel}>担当業務</Text>
-                <Text style={styles.tableValue}>
-                  モックに沿った画面(スケジュール管理・出席確認・体験申込・退会休止・スタッフ管理・支払い管理・イベント管理)などを実装。
-                </Text>
+                <Text
+                  style={styles.tableValue}
+                >{`- モックに沿った画面(スケジュール管理・出席確認・体験申込・退会休止・スタッフ管理・支払い管理・イベント管理)などを実装。
+- 入会費の請求・消込の取り消し・ダッシュボードの絞り込みなどのAPIを実装。`}</Text>
               </View>
               <View style={styles.tableRowLast}>
                 <Text style={styles.tableLabel}>利用技術</Text>
                 <Text style={styles.tableValue}>
-                  Angular 22（Zoneless / Signalベース / OnPush）, TypeScript
+                  Angular 22（Zoneless / Signalベース / OnPush）, TypeScript,
+                  Node.js(Express), Knex, MySQL, OpenAPI, Vitest
                 </Text>
               </View>
             </View>
